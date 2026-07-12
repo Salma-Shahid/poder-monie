@@ -141,6 +141,11 @@ Learn more in [Project Structure](./PROJECT_STRUCTURE.md#tech-stack).
 - `/` - Home page with hero, features, and testimonials
 - `/products` - Investment products and team
 - `/calculators` - Financial calculators
+- `/about` - About: company mission, team, and values
+- `/blog` - Blog: articles, announcements, and insights
+- `/contact` - Contact: contact form and support information
+- `/signup` - Signup: create an account (registration form)
+- `/login` - Login: user authentication page
 
 ### Live Site
 https://poder-monie.vercel.app
@@ -185,6 +190,10 @@ For more information, see [LICENSE](../LICENSE) in the repository root.
 
 ---
 
-**Last Updated**: June 13, 2026
+**Last Updated**: July 12, 2026
+
+Updates
+- Added documentation entries for new pages: About, Blog, Contact, Signup, and Login. These pages are implemented under `src/pages/` and wired into the application router.
+- `src/App.jsx` and `src/NavigationHeaderSection.jsx` were updated to include the new routes and navigation links (mobile + desktop).
 
 For the latest documentation, visit the [docs folder](https://github.com/Salma-Shahid/poder-monie/tree/main/docs) on GitHub.
