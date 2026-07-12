@@ -6,6 +6,8 @@ Nigeria's mobile-first investment platform landing page. Built with React, Vite,
 
 ## What's new (Latest update: 2026-07-12)
 
+- Added new pages: About, Blog, Contact, Signup, and Login. These pages are implemented under `src/pages/` and wired into the app router.
+- Updated `src/App.jsx` and `src/NavigationHeaderSection.jsx` to include the new routes and navigation links (mobile + desktop).
 - Updated project documentation and developer setup.
 - Verified compatibility with React 19, Vite 8, and Tailwind CSS 4.
 - Added links to the `docs/` folder with detailed guides and deployment notes.
@@ -65,19 +67,29 @@ npm run preview
 | `/` | Home — hero, stats, features, testimonials |
 | `/products` | Products — investment & savings catalog, leadership team |
 | `/calculators` | Calculators — fixed-income, savings, and loan tools |
+| `/about` | About — company mission, team, and values |
+| `/blog` | Blog — articles, announcements, and insights |
+| `/contact` | Contact — contact form and support information |
+| `/signup` | Signup — create an account (registration form) |
+| `/login` | Login — user authentication page |
 
 ## Project Structure
 
 ```
 src/
-├── App.jsx                     # Router and routes
+├── App.jsx                     # Router and routes (updated with new pages)
 ├── components/
 │   └── Layout.jsx              # Shared header + footer wrapper
 ├── pages/
 │   ├── HomePage.jsx
 │   ├── ProductsPage.jsx
-│   └── CalculatorsPage.jsx
-├── NavigationHeaderSection.jsx # Sticky header with mobile menu
+│   ├── CalculatorsPage.jsx
+│   ├── AboutPage.jsx           # New
+│   ├── BlogPage.jsx            # New
+│   ├── ContactPage.jsx         # New
+│   ├── SignupPage.jsx          # New
+│   └── LoginPage.jsx           # New
+├── NavigationHeaderSection.jsx # Sticky header with mobile menu (updated)
 ├── HeroShowcaseSection.jsx     # Home page sections
 ├── EngagementFooterSection.jsx # CTA, footer, newsletter, cookie banner
 ├── assets/                     # Static assets (logo, images)
