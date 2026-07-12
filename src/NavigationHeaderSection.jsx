@@ -6,11 +6,11 @@ import logo from "./assets/logo.svg";
 
 const navItems = [
   { label: "Home", path: "/" },
-  { label: "About", path: "/#about" },
+  { label: "About", path: "/about" },
   { label: "Products", path: "/products" },
   { label: "Calculators", path: "/calculators" },
-  { label: "Blog", path: "/#blog" },
-  { label: "Contact", path: "/#contact" },
+  { label: "Blog", path: "/blog" },
+  { label: "Contact", path: "/contact" },
 ];
 
 export const NavigationHeaderSection = () => {
@@ -66,13 +66,13 @@ export const NavigationHeaderSection = () => {
 
           <div className="hidden items-center gap-4 lg:flex">
             <Link
-              to="/#contact"
+              to="/login"
               className="text-sm font-medium text-text-muted transition-colors hover:text-brand-600"
             >
               Login
             </Link>
             <Link
-              to="/#download"
+              to="/signup"
               className="rounded-xl bg-brand-500 px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-brand-600"
             >
               Sign Up
@@ -117,14 +117,14 @@ export const NavigationHeaderSection = () => {
             ))}
             <li className="flex gap-3 pt-2">
               <Link
-                to="/#contact"
+                to="/login"
                 className="flex-1 rounded-xl border border-brand-500 px-4 py-3 text-center text-sm font-medium text-brand-500"
                 onClick={() => setMobileOpen(false)}
               >
                 Login
               </Link>
               <Link
-                to="/#download"
+                to="/signup"
                 className="flex-1 rounded-xl bg-brand-500 px-4 py-3 text-center text-sm font-medium text-white"
                 onClick={() => setMobileOpen(false)}
               >
